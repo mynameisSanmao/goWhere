@@ -7,11 +7,14 @@
     	<span class="iconfont">&#xe632;</span>
 	    请输入城市/景点/游玩主题
 	</div>
-    <div class="head-right">
-    	城市
-    	<span class="iconfont allow-icon">&#xe6aa;</span>
-    </div>
+	<router-link to="/city" > 
+	    <div class="head-right">
+	    	{{this.$store.state.city}}
+	    	<span class="iconfont allow-icon">&#xe6aa;</span>
+	    </div>
+    </router-link>
   </div>
+
 </template>
 
 <script>
@@ -56,6 +59,7 @@ export default {
 		width: size(62);
 		float: right;
 		text-align: center;
+		color:#fff
 		.allow-icon
 			margin-left: size(-4);
 </style>
